@@ -1,5 +1,5 @@
 import unittest
-from ucsd-ext-put-final.calculator import *
+from src.calculator import *
 
 
 class TestCalculator(unittest.TestCase):
@@ -21,14 +21,12 @@ class TestCalculator(unittest.TestCase):
         
     def test_division(self):
         real = div(4,2)
-        expect 2
+        expect = 2.0
         self.assertEqual(real, expect)
         
     def test_division_by_zero(self):
-        with self.assertRaises(ZeroDivisionError) as context:
+        with self.assertRaises(ZeroDivisionError):
             div(4,0)
-            
-        self.assertTrue('ZeroDivisionError: division by zero' in str(context.exception))
         
 if __name__ == '__main__':
     unittest.main()

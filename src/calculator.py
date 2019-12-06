@@ -31,7 +31,7 @@ def div(num1, num2):
     """ 
     Divides two numbers
     >>> div(4,2)
-    2
+    2.0
     
     Raises zero division error
     >>> div(4,0)
