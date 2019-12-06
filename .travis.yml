@@ -6,5 +6,6 @@ python:
   - "nightly"
 scripts:
   - python -m doctest counter.py
+  - python -m doctest ucsd-ext-put-final/calculator.py
   - pytest
   
