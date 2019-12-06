@@ -1,4 +1,6 @@
 import unittest
+from ucsd-ext-put-final.calculator import *
+
 
 class TestCalculator(unittest.TestCase):
 
