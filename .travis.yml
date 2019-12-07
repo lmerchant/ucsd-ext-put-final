@@ -6,5 +6,6 @@ python:
   - "nightly"
 scripts:
   - python -m doctest counter.py
+  - python -m doctest src/calculator.py
   - pytest
-  
+env: PYTHONPATH=$PYTHONPATH:$TRAVIS_BUILD_DIR 
